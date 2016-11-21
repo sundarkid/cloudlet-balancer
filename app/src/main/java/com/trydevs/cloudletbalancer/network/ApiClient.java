@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 
 public class ApiClient {
-    private static String baseUrl="http://localhost:8096/HeadNodeServer/";
+    private static String baseUrl="http://192.168.1.100:8096/HeadNodeServer/";
     private static Retrofit retrofit = null;
 
     public static Retrofit getClient() {

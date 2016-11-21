@@ -10,7 +10,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <!-- Required on all api levels if you are using setPersisted(true) -->
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-
+    <!-- Reading files from system -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:name="com.trydevs.cloudletbalancer.extras.MyApplication"
@@ -18,7 +19,6 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-
         android:theme="@style/AppTheme">
         <activity android:name="com.trydevs.cloudletbalancer.activities.MainActivity">
             <intent-filter>
@@ -26,6 +26,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.trydevs.cloudletbalancer.activities.ImageSelectorActivity"
+            android:label="@string/title_activity_image_selector"
+            android:theme="@style/AppTheme">
+
         </activity>
     </application>
 
